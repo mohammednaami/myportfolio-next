@@ -3,7 +3,7 @@ import { client } from "@/app/lib/sanity";
 import Image from "next/image";
 
 async function getFavProject() {
-  const query = `*[_type == "project"] | order(_createdAt desc)[0...2]{
+  const query = `*[_type == "project"] | order(_createdAt asc)[0...2]{
   title,
     _id,
     link,
@@ -12,7 +12,7 @@ async function getFavProject() {
     "imgUrl": image.asset->url
 }`;
 
-  const data = await client.fetch(query);
+  const data = await client.fetch(query, {}, { next: { revalidate: 30 } });
 
   return data;
 }

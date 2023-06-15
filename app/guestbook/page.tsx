@@ -7,11 +7,15 @@ import { RegisterLink } from "@kinde-oss/kinde-auth-nextjs/components";
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
 import { prisma } from "../lib/db";
 import { Suspense } from "react";
-import { GuestBookFormLoading, LoadingMessages } from "@/components/loading/LoadingMessages";
+import {
+  GuestBookFormLoading,
+  LoadingMessages,
+} from "@/components/loading/LoadingMessages";
 import Image from "next/image";
-
+import { unstable_noStore as noStore } from "next/cache";
 
 async function getGuestBookEntry() {
+  noStore();
   const data = await prisma.guestBookEntry.findMany({
     select: {
       id: true,
@@ -43,12 +47,11 @@ export default function Guestbook() {
         <CardHeader className="flex flex-col w-full">
           <Label className="mb-1">Message</Label>
           <Suspense fallback={<GuestBookFormLoading />}>
-          <GuestBookForm />
-
+            <GuestBookForm />
           </Suspense>
           <ul className="pt-7 gap-y-5 flex flex-col">
             <Suspense fallback={<LoadingMessages />}>
-            <GuestBookEntries />
+              <GuestBookEntries />
             </Suspense>
           </ul>
         </CardHeader>
@@ -64,24 +67,27 @@ async function GuestBookEntries() {
   return data.map((item) => (
     <li key={item.id}>
       <div className="flex items-center">
-      {item.User?.profileimage ? (
-  <Image
-    src={item.User.profileimage}
-    alt={item.User.firstname || "User profile"}
-    width={40}
-    height={40}
-    className="rounded-lg"
-  />
-) : (
-  <Image
-    src="avatar.svg" // Default profile image
-    alt="Default profile"
-    width={40}
-    height={40}
-    className="rounded-lg"
-  />
-)}
-        <p className="text-muted-foreground pl-3 break-words"><span className="text-foreground">{item.User?.firstname}: </span>{item.message}</p>
+        {item.User?.profileimage ? (
+          <Image
+            src={item.User.profileimage}
+            alt={item.User.firstname || "User profile"}
+            width={40}
+            height={40}
+            className="rounded-lg"
+          />
+        ) : (
+          <Image
+            src="avatar.svg" // Default profile image
+            alt="Default profile"
+            width={40}
+            height={40}
+            className="rounded-lg"
+          />
+        )}
+        <p className="text-muted-foreground pl-3 break-words">
+          <span className="text-foreground">{item.User?.firstname}: </span>
+          {item.message}
+        </p>
       </div>
     </li>
   ));

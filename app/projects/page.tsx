@@ -2,7 +2,7 @@ import { ProjectCard } from "../lib/interface";
 import { client } from "../lib/sanity";
 import Image from "next/image";
 async function getProjects() {
-  const query = `*[_type == "project"]{
+  const query = `*[_type == "project"] | order(_createdAt asc){
   title,
     _id,
     link,
@@ -11,7 +11,7 @@ async function getProjects() {
     "imgUrl": image.asset->url
 }`;
 
-  const data = await client.fetch(query);
+  const data = await client.fetch(query, {}, { next: { revalidate: 30 } });
 
   return data;
 }
