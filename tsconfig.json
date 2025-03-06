@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
-    "baseUrl": ".", // ✅ Fix: Change "src" to "."
+    "baseUrl": ".", 
     "paths": {
-      "@/*": ["./*"] // ✅ Ensure this exists
+      "@/*": ["./*"] 
     },
     "target": "ES2017",
     "lib": ["dom", "dom.iterable", "esnext"],

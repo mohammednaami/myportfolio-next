@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import me from 'public/me.jpg'
+import me from 'public/me/me.jpg'
 
 export function Hero() {
   return (
@@ -9,8 +9,8 @@ export function Hero() {
           Hey I am Mohammed Naami 🚀
         </h1>
         <h2 className="text-3xl lg:text-5xl font-normal mt-3">
-          I am a web developer and online marketing specialist and living in
-          Germany 🇩🇪
+          I am a Full-stack Developer and Online Marketing Specialist, based in
+          Nürnberg, Germany 🇩🇪
         </h2>
 
         <a href="mailto:mohammednaami96@gmail.com" className="relative inline-block text-lg group mt-5">

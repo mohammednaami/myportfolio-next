@@ -1,5 +1,5 @@
 import Image from "next/image";
-import square from "public/square.svg";
+import m3 from "public/me/me3.jpg";
 import {
   Card,
   CardContent,
@@ -96,8 +96,8 @@ export function SectionTwo() {
       <div className="relative col-span-1">
         <div className="w-full h-full overflow-hidden rounded-2xl">
           <Image
-            src={square}
-            alt="Square"
+            src={m3}
+            alt="Mohammed Naami"
             className="w-full h-full object-cover rounded-2xl"
           />
         </div>
