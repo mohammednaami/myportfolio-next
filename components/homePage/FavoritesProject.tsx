@@ -34,6 +34,7 @@ export default async function FavoriteProject() {
               className="object-cover group-hover:scale-95 transition-transform duration-500 ease-in-out rounded-xl"
               alt={project.title}
               fill
+              priority
             />
           </div>
           <div className="mt-4">

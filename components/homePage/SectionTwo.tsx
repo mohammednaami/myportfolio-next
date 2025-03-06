@@ -99,6 +99,7 @@ export function SectionTwo() {
             src={m3}
             alt="Mohammed Naami"
             className="w-full h-full object-cover rounded-2xl"
+            priority
           />
         </div>
       </div>
@@ -124,7 +125,7 @@ export function SectionTwo() {
             <Card
               key={item.id}
               className="p-4 gap-2 flex flex-col items-center sm:items-start bg-gray-100 border-none text-center sm:text-left">
-              <Image src={item.icon} alt={item.name} className="w-16 h-16" />
+              <Image priority src={item.icon} alt={item.name} className="w-16 h-16" />
               <h1 className="text-xl font-semibold">{item.name}</h1>
               <p className="text-gray-500">{item.username}</p>
               <Button size="sm" asChild>
