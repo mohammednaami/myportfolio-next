@@ -12,7 +12,6 @@ import chatgpt from "public/tech-icons/chatgpt.svg";
 import cloud from "public/tech-icons/creativecloud.svg";
 import github from "public/tech-icons/github.svg";
 import slack from "public/tech-icons/slack.svg";
-import discord from "public/tech-icons/discord.svg";
 import youtube from "public/tech-icons/youtube.svg";
 import chrome from "public/tech-icons/chrome.svg";
 import pr from "public/tech-icons/pr.svg";
@@ -37,6 +36,10 @@ import shopify from "public/tech-icons/shopify.svg";
 import typescript from "public/tech-icons/typescript.svg";
 import nextjs from "public/tech-icons/nextjs-dark.svg";
 import react from "public/tech-icons/react-dark.svg";
+import notion from "public/tech-icons/notion.svg";
+import bootstrap from "public/tech-icons/bootstrap.svg";
+import docker from "public/tech-icons/docker.svg";
+
 
 const icons = [
   nextjs,
@@ -49,6 +52,7 @@ const icons = [
   php,
   symfony,
   tailwind,
+  bootstrap,
   vercel,
   vscode,
   shopify,
@@ -57,8 +61,9 @@ const icons = [
   chatgpt,
   cloud,
   github,
+  docker,
   slack,
-  discord,
+  notion,
   youtube,
   chrome,
   pr,

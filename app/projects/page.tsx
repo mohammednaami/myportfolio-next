@@ -30,12 +30,16 @@ export default async function ProjectPage() {
             key={project._id}
             className="group block"
             target="_blank">
-            <div className="aspect-w-16 aspect-h-12 overflow-hidden rounded-2xl relative">
+            <div className="aspect-w-15 aspect-h-7 overflow-hidden rounded-2xl relative">
               <Image
-                src={project.imgUrl}
-                className="object-cover group-hover:scale-95 transition-transform duration-500 ease-in-out rounded-xl"
+  src={`${project.imgUrl}?w=1000&auto=format`}
+  className="object-cover rounded-xl group-hover:scale-95 transition-transform duration-500 ease-in-out"
                 alt={project.title}
-                fill
+                layout="intrinsic"
+
+                width={500} 
+                height={350}
+                quality={100} 
               />
             </div>
             <div className="mt-4">
