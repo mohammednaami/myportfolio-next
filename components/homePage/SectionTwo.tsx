@@ -18,7 +18,6 @@ import pr from "public/tech-icons/pr.svg";
 import ps from "public/tech-icons/ps.svg";
 
 import twitter from "public/tech-icons/twitter.svg";
-import insta from "public/tech-icons/insta.svg";
 import linkedin from "public/tech-icons/linkedin.svg";
 import { Button } from "@/components/ui/button";
 
@@ -73,10 +72,10 @@ const icons = [
 const socialMedia = [
   {
     id: 1,
-    icon: insta,
-    name: "Instagram",
-    username: "@naamimohammed",
-    link: "https://www.instagram.com/naamimohammed/",
+    icon: github,
+    name: "Github",
+    username: "@mohammednaami",
+    link: "https://github.com/mohammednaami",
   },
   {
     id: 2,
