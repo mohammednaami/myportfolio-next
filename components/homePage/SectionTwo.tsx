@@ -11,16 +11,13 @@ import canva from "public/tech-icons/canva.svg";
 import chatgpt from "public/tech-icons/chatgpt.svg";
 import cloud from "public/tech-icons/creativecloud.svg";
 import github from "public/tech-icons/github.svg";
-import slack from "public/tech-icons/slack.svg";
 import youtube from "public/tech-icons/youtube.svg";
 import chrome from "public/tech-icons/chrome.svg";
 import pr from "public/tech-icons/pr.svg";
 import ps from "public/tech-icons/ps.svg";
-
 import twitter from "public/tech-icons/twitter.svg";
 import linkedin from "public/tech-icons/linkedin.svg";
 import { Button } from "@/components/ui/button";
-
 import javascript from "public/tech-icons/javascript.svg";
 import mysql from "public/tech-icons/mysql-dark.svg";
 import postgres from "public/tech-icons/postgresql-dark.svg";
@@ -38,11 +35,15 @@ import react from "public/tech-icons/react-dark.svg";
 import notion from "public/tech-icons/notion.svg";
 import bootstrap from "public/tech-icons/bootstrap.svg";
 import docker from "public/tech-icons/docker.svg";
-
-
+import ggAnalytic from "public/tech-icons/google-analytics.svg";
+import laravel from "public/tech-icons/laravel.svg";
+import digitalOcean from "public/tech-icons/digitalocean.svg";
+import angular from "public/tech-icons/AngularJS.svg";
+import searchConsole from "public/tech-icons/searchConsole.svg";
 const icons = [
   nextjs,
   react,
+  angular,
   typescript,
   javascript,
   postgres,
@@ -50,18 +51,21 @@ const icons = [
   neo,
   php,
   symfony,
+  laravel,
   tailwind,
   bootstrap,
   vercel,
   vscode,
   shopify,
   googleads,
+  ggAnalytic,
+  searchConsole,
   canva,
   chatgpt,
   cloud,
+  digitalOcean,
   github,
   docker,
-  slack,
   notion,
   youtube,
   chrome,
