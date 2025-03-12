@@ -13,6 +13,7 @@ import { MobileMenu } from "./MobileMenu";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import logo from "public/logo.svg";
+import { Contact } from "lucide-react";
 
 export const navigationItems = [
   {
@@ -66,7 +67,7 @@ export function Navbar() {
 
       <div className="flex items-center justify-end md:col-span-3 col-span-6">
         <Button className="hidden sm:flex" asChild>
-          <a href="mailto:mohammednaami96@gmail.com">Contact Me</a>
+          <a href="mailto:mohammednaami96@gmail.com"> <Contact  /> Contact Me</a>
         </Button>
         <div className="sm:hidden">
           <MobileMenu />
