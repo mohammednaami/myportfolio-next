@@ -6,7 +6,7 @@ export function Hero() {
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
       <div className="col-span-1 lg:col-span-2 h-full bg-gray-100 min-h-[500px] lg:min-h-[300px] rounded-2xl p-8">
         <h1 className="text-3xl lg:text-5xl font-medium">
-          Hey I am Mohammed Naami 🚀
+          Hey I'm Mohammed Naami 🚀
         </h1>
         <h2 className="text-3xl lg:text-5xl font-normal mt-3">
           Full-stack Developer and Online Marketing Specialist, based in
