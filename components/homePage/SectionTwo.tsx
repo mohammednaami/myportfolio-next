@@ -44,7 +44,7 @@ import searchConsole from "public/tech-icons/searchConsole.svg";
 import awss3 from "public/tech-icons/aws-s3.svg";
 import awsrds from "public/tech-icons/aws-rds.svg";
 import awsec2 from "public/tech-icons/aws-ec2.svg";
-import awsapigateway from "public/tech-icons/aws-apigateway.svg";
+import awsapigateway from "public/tech-icons/aws-api-gateway.svg";
 import expressjs from "public/tech-icons/expressjs.svg";
 
 
