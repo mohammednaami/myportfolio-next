@@ -40,6 +40,14 @@ import laravel from "public/tech-icons/laravel.svg";
 import digitalOcean from "public/tech-icons/digitalocean.svg";
 import angular from "public/tech-icons/AngularJS.svg";
 import searchConsole from "public/tech-icons/searchConsole.svg";
+
+import awss3 from "public/tech-icons/aws-s3.svg";
+import awsrds from "public/tech-icons/aws-rds.svg";
+import awsec2 from "public/tech-icons/aws-ec2.svg";
+import awsapigateway from "public/tech-icons/aws-apigateway.svg";
+import expressjs from "public/tech-icons/expressjs.svg";
+
+
 const icons = [
   nextjs,
   react,
@@ -71,6 +79,11 @@ const icons = [
   chrome,
   pr,
   ps,
+  awss3,
+  awsrds,
+  awsec2,
+  awsapigateway,
+  expressjs
 ];
 
 const socialMedia = [
